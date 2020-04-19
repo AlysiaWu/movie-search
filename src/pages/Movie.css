@@ -1,0 +1,18 @@
+.cast-row {
+    display: table-column-group
+}
+
+a span{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.cast {
+    display: inline-block;
+    width: 1000px;
+    
+}
+.actor {
+    width: 30%;
+}
