@@ -1,0 +1,8 @@
+.search {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+form {
+    margin: 1rem;
+}

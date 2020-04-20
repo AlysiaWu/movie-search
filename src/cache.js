@@ -1,9 +1,12 @@
-import NodeCache from 'node-cache';
+import NodeCache from "node-cache";
 
 class Cache {
-
   constructor(ttlSeconds) {
-    this.cache = new NodeCache({ stdTTL: ttlSeconds, checkperiod: ttlSeconds * 0.2, useClones: false });
+    this.cache = new NodeCache({
+      stdTTL: ttlSeconds,
+      checkperiod: ttlSeconds * 0.2,
+      useClones: false,
+    });
   }
 
   get(key, storeFunction) {
@@ -22,7 +25,7 @@ class Cache {
     this.cache.del(keys);
   }
 
-  delStartWith(startStr = '') {
+  delStartWith(startStr = "") {
     if (!startStr) {
       return;
     }
@@ -39,6 +42,5 @@ class Cache {
     this.cache.flushAll();
   }
 }
-
 
 export default Cache;
