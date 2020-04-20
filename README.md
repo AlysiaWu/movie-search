@@ -66,4 +66,20 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# movie-search
+
+# Movie Search
+
+- Features completed: 
+    - When first loaded, the user should see a list of the most popular movies and a search bar.
+    - A user should be able to search for a movie by title in the search bar, and the matching results should show up in the list of movies.
+    - A user can click on a movie in the list and be taken to a page that displays more details for the movie (title, movie poster, release date, cast, synopsis, etc)
+    - Add filtering by genre
+    - Show related movies
+    - Add a page for individual actor details
+    - Add a caching layer for your requests to the 3rd party API.
+
+- Steps to get you apps running locally: 
+    - run `yarn` to install dependencies
+    - run `yarn start` to see this app running locally at port 3000
+    - run `yarn build` to generate a production build
+    - see more above from `create-react-app`
